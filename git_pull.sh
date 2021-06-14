@@ -532,6 +532,7 @@ if [ ${ExitStatusShell} -eq 0 ]; then
   #测试自写脚本
   [ -d ${Scripts2Dir}/.git ] && Git_PullScripts2 || Git_CloneScripts2
   cp -f ${Scripts2Dir}/jd_*.js ${ScriptsDir}
+  [ -f ${Scripts2Dir}/ZooFaker.js ] && cp -f ${Scripts2Dir}/ZooFaker.js ${ScriptsDir}
   cp -rf ${Scripts2Dir}/sendNotify.js ${ScriptsDir}/sendNotify.js
 fi
 

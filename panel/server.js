@@ -184,10 +184,6 @@ async function checkLogin() {
  * 检查 config.sh 以及 config.sh.sample 文件是否存在
  */
 function checkConfigFile() {
-    if (!fs.existsSync(ckFile)) {
-        console.error('脚本启动失败，cookie.sh 文件不存在！');
-        process.exit(1);
-    }
     if (!fs.existsSync(sampleFile)) {
         console.error('脚本启动失败，config.sh.sample 文件不存在！');
         process.exit(1);
